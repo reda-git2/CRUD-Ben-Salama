@@ -52,4 +52,5 @@ form.addEventListener("submit",function(e){
   `;
   table2.appendChild(tr2);
   form2.reset();
+  //commentaire pour recommit
   });

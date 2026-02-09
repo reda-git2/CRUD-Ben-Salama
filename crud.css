@@ -2,6 +2,9 @@
   display: flex;
   gap: 30px;
 }
+.test{
+  grid-area: 5;
+}
 .form {
   display: flex;
   flex-direction: column;
