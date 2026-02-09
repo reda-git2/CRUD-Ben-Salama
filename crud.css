@@ -1,0 +1,40 @@
+.menu{
+  display: flex;
+  gap: 30px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 300px; /* largeur totale du formulaire, ajuste selon besoin */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.form-group label {
+  width: 85px;      /* largeur fixe et petite colonne pour les labels */
+  white-space: nowrap; /* empêche le label de casser la ligne */
+  margin-right: 10px;
+  text-align: right; /* texte des labels aligné à droite pour coller aux champs */
+}
+
+.form-group input,
+.form-group textarea {
+  flex: 1;          /* champs prennent le reste de la place */
+  padding: 5px;
+  box-sizing: border-box;
+  min-width: 200px;
+  height: 20px; /* largeur minimale des champs */
+}
+.cacher{
+  display: none;
+}
+#afficher{
+  display: block;
+}
+#table {
+  display: table; /* s’assure que le tableau s’affiche correctement même après avoir été caché */
+}

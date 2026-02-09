@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="crud.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="menu"> <strong id="mDashboard">dashboard</strong><strong id="mAjouter">ajouter utilisateur</strong><strong id="mListe">liste utilisateur</strong><strong id="mAjouterProf">ajout prof</strong></p>
+
+<div id="ajouter" class="cacher">
+  <form class="form" id="form">
+  <div class="form-group">
+    <label for="nom">Nom :</label>
+    <input type="text" id="nom" name="nom">
+  </div>
+
+  <div class="form-group">
+    <label for="identifiant">Identifiant :</label>
+    <input type="text" id="identifiant" name="identifiant">
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age :</label>
+    <input type="number" id="age" name="age" style="width: 60px;">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email">
+  </div>
+  <div>
+  <input type="submit" value="enregistrer">
+  <br>
+  <input type="reset" value="reset">
+  </div>
+</form>
+</div>
+<div id="liste" class="cacher">
+  <h2>Liste des utilisateurs</h2>
+  <table id="table">
+    <tr>
+    <th>nom</th>
+    <th>age</th>
+    <th>email</th>
+    <th>identifiant</th>
+    </tr>
+    <tbody id="tbody">
+
+    </tbody>
+
+  </table>
+</div>
+<div id="dashboard">
+  <h2>Dashboard</h2>
+  <p>Nombre d'utilisateurs : <span id="nbUsers">0</span></p>
+  <p>Nombre de profs : <span id="nbProfs">0</span></p>
+</div>
+<div id="ajouterProf">
+   <form class="form" id="form2">
+  <div class="form-group">
+    <label for="nom2">Nom :</label>
+    <input type="text" id="nom2" name="nom2">
+  </div>
+
+  <div class="form-group">
+    <label for="identifiant2">Identifiant :</label>
+    <input type="text" id="identifiant2" name="identifiant2">
+  </div>
+  <div class="form-group">
+    <label for="email2">Email :</label>
+    <input type="email" id="email2" name="email2">
+  </div>
+  <div>
+  <input type="submit" value="enregistrer">
+  <br>
+  <input type="reset" value="reset">
+  </div>
+</form>
+</div>
+<div id="listeProf" class="cacher">
+  <h2>Liste des profs</h2>
+  <table id="table2">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Email</th>
+        <th>Identifiant</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody id="tbody2"></tbody>
+  </table>
+</div>
+
+
+    <script src="crud.js"></script>
+
+</body>
+</html>
